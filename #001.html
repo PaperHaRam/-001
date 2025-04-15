@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>31호 도감</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #121829; /* 전체 배경 */
+      color: #ffffff;
+      width: 100%;
+      height: 100vh;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1920px;
+      height: 100%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .top-section {
+      background-color: #31abf8; /* 퍼스널 컬러 */
+      padding: 30px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .top-section h1 {
+      font-size: 2.5rem;
+      color: white;
+    }
+
+    .top-section span {
+      font-size: 1.5rem;
+      color: white;
+    }
+
+    .image-section {
+      background-color: #31abf8; /* 퍼스널 컬러 */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+    }
+
+    .image-section img {
+      max-height: 300px;
+    }
+
+    .info-section {
+      background-color: #1E2638;
+      padding: 40px 80px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .types {
+      display: flex;
+      gap: 20px;
+    }
+
+    .type {
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-weight: bold;
+    }
+
+    .type.grass {
+      background-color: #3176f8; /* 특징 1 */
+    }
+
+    .type.poison {
+      background-color: #31f885; /* 특징 2 */
+    }
+
+    .info-grid {
+      display: flex;
+      justify-content: space-around;
+      text-align: center;
+    }
+
+    .info-item span {
+      display: block;
+      font-size: 1.2rem;
+      color: #aaa;
+    }
+
+    .info-item strong {
+      font-size: 1.6rem;
+    }
+
+    .base-stats, .description {
+      text-align: center;
+    }
+
+    .base-stats h2, .description h2 {
+      margin-bottom: 10px;
+      color: #31abf8;
+    }
+
+    .stat-list {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      font-size: 1.2rem;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="top-section">
+      <h1>31호</h1>
+      <span>#001</span>
+    </div>
+
+    <div class="image-section">
+      <img src="https://files.d20.io/images/437040694/mtC4Hl0SZTbphnyQ9x7JGw/max.png" alt="포켓몬 이미지" />
+    </div>
+
+    <div class="info-section">
+      <div class="types">
+        <div class="type grass">종이 인간</div>
+        <div class="type poison">몽크</div>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-item">
+          <span>Weight</span>
+          <strong>23.3kg</strong>
+        </div>
+        <div class="info-item">
+          <span>Height</span>
+          <strong>150cm</strong>
+        </div>
+        <div class="info-item">
+          <span>Main Ability</span>
+          <strong>비전학<br>역사학</strong>
+        </div>
+      </div>
+
+      <div class="base-stats">
+        <h2>기본 능력치</h2>
+        <div class="stat-list">
+          <div>STR 12</div>
+          <div>DEX 11</div>
+          <div>CON 11</div>
+          <div>INT 14</div>
+          <div>WIS 16</div>
+          <div>CHA 9</div>
+        </div>
+      </div>
+
+      <div class="description">
+        <h2>설명</h2>
+        <p>3세대 Param들이 대부분 그러했듯,<br>어느 과시하기 좋아하는 마법사의 손에서 탄생한 31호는,<br>이름에서 엿볼 수 있듯이 그 마법사의 31번째 작품이다.<br>31호는 창조주에게 충성을 맹세했지만, 그 충성은 오래가지 않았다.<br>그렇다고 창조주를 등진 것은 아니다.<br>다만 창조주가 Param을 너무 많이 창조한 나머지 Param 종특상 그들끼리 뭉쳐 독립을 추구했을 뿐이다.<br>사실 31호가 만들어 졌을 때부터 이미 예견된 미래였다.<br>재미, 과시로 인해 Param을 너무 많이 만든 창조주도 본인이 수많은 Param들을 책임질 수 없다는 것을 깨닫고는 그들의 독립을 인정했다.<br>주변에 다른 이의 손에 탄생한 2, 3세대 Param들이 모여 사는 마을이 있단 소문에 그들은 마을을 찾아 헤맸고,<br>마을에 망명을 신청했다.<br>동족에 대한 애착심이 강한 Param들은 그들의 망명 신청을 승인했고, 그렇게 그들은 마을에 정착했다.<br>그리고 31호는 타고난 현자였던 탓에 마을의 사서를 자처했다.<br>마을의 서적을 관리하면서 동족의 취약점을 보완할 방법을 연구하던 31호는, 10년 정도 지나 마을의 모든 서적을 읽게 되었다,<br>하지만 결론이 나지 않던 그는 마을 밖에서 그 해답을 찾으리라 맹세하고는 마을 밖을 나서게 된다.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
